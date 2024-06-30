@@ -21,9 +21,6 @@ PRODUCT_PACKAGES += \
     bootctrl.mt6765.recovery \
     android.hardware.boot@1.0-service
 
-PRODUCT_PACKAGES += \
-    bootctrl.mt6765
-
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.mt6765 \
     libgptutils \
