@@ -9,6 +9,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_X6835B.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_X6835B-user \
-    twrp_X6835B-userdebug \
     twrp_X6835B-eng
