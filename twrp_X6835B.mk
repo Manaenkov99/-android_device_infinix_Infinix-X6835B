@@ -18,11 +18,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from Infinix-X6835B device
-$(call inherit-product, device/infinix/Infinix-X6835B/device.mk)
+# Inherit from X6835B device
+$(call inherit-product, device/infinix/X6835B/device.mk)
 
-PRODUCT_DEVICE := Infinix-X6835B
-PRODUCT_NAME := twrp_Infinix-X6835B
+PRODUCT_DEVICE := X6835B
+PRODUCT_NAME := twrp_X6835B
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix X6835B
 PRODUCT_MANUFACTURER := infinix
