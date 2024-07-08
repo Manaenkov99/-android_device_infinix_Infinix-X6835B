@@ -37,6 +37,14 @@ PRODUCT_PLATFORM := mt6765
 
 # A/B
 AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    product \
+    vbmeta_vendor \
+    system_ext \
+    vendor \
+    system \
+    boot \
+    vbmeta_system
 
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 2
