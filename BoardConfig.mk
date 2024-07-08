@@ -9,6 +9,9 @@ DEVICE_PATH := device/infinix/X6835B
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 
 # A/B
 AB_OTA_UPDATER := true
@@ -88,6 +91,11 @@ BOARD_INFINIX_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
 
+# Workaround for copying error vendor files to recovery ramdisk
+TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_SYSTEM_EXT = system_ext
+
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
@@ -126,8 +134,8 @@ TW_EXCLUDE_PYTHON := true
 TW_EXCLUDE_NANO := true
 TW_EXCLUDE_TZDATA := true
 TW_EXCLUDE_TWRPAPP := true
-TW_EXTRA_LANGUAGES := false
-TW_NO_SCREEN_BLANK := true
+TW_EXTRA_LANGUAGES := true
+TW_NO_SCREEN_BLANK := false
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INCLUDE_NTFS_3G := true
 TW_HAS_MTP := true
